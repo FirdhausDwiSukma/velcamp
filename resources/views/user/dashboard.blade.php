@@ -34,6 +34,7 @@
                                     <strong>{{ $checkout->Camp->price }}K</strong>
                                 </td>
                                 <td>
+                                    {{-- menghandle apabila pembayaran berhasil dan belum bayar --}}
                                     @if ($checkout->is_paid)
                                         <strong class="text-green">Payment Succes</strong>
                                     @else

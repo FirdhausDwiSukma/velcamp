@@ -9,16 +9,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Program</a>
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Mentor</a>
+                    <a class="nav-link" href="#">Program</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Business</a>
+                    <a class="nav-link" href="#">Mentor</a>
                 </li>
             </ul>
 
@@ -29,7 +29,7 @@
                         <img src="{{ Auth::user()->avatar }}" class="user-photo rounded-circle" alt="">
                         <ul class="dropdown-menu mt-2" aria-labelledby="dropdownMenuLink" style="right: 0; left:5">
                             <li>
-                                <a href="#" class="dropdown-item">My Dashboard</a>
+                                <a href="{{ route('dashboard') }}" class="dropdown-item">My Dashboard</a>
                             </li>
                             <li>
                                 <a href="#" class="dropdown-item" onclick="event.preventDefault(); document.getElementById('logout-form').submit()">Sign Out</a>
