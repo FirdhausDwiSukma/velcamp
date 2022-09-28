@@ -27,7 +27,7 @@
                     <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                         Halo, {{ Auth::user()->name }}!
                         <img src="{{ Auth::user()->avatar }}" class="user-photo rounded-circle" alt="">
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="right: 0; left:auto">
+                        <ul class="dropdown-menu mt-2" aria-labelledby="dropdownMenuLink" style="right: 0; left:5">
                             <li>
                                 <a href="#" class="dropdown-item">My Dashboard</a>
                             </li>
